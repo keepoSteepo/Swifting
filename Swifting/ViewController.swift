@@ -12,21 +12,26 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
-    
+    var tapCount = 0
     
     @IBAction func buttonTapped(_ sender: Any) {
-        theLabel.text = "Greetings Gibran!"
+        theLabel.text = "Marvelous, Click Yes and Riddle Me This.."
+        tapCount = tapCount + 1
+        
+        if tapCount >= 2 {
+            theLabel.text = "Scratch that, I analyzed your IQ,Ive Already Won"
+        }
         
     }
     @IBAction func dontPush(_ sender: Any) {
-        theLabel.text = "You Rebel, Seriously Though, STOP!"
+        theLabel.text = "I Wouldn't Want To Play Against Me Either."
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.yellow
         
-        theLabel.text = "Who Goes There?"
+        theLabel.text = "Do You Want To Play A Game?"
 
     
     }

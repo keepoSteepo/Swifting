@@ -30,18 +30,18 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deP-Ms-XEc">
-                                <rect key="frame" x="133" y="110.5" width="110" height="30"/>
-                                <state key="normal" title="Push To Identify"/>
+                                <rect key="frame" x="173" y="110.5" width="30" height="30"/>
+                                <state key="normal" title="Yes"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AMD-Fq-q6z"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WqF-Aj-fsO">
-                                <rect key="frame" x="132" y="160.5" width="112" height="30"/>
+                                <rect key="frame" x="173" y="160.5" width="30" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoK-Mf-ipG">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="30"/>
-                                        <state key="normal" title="Don't Push Here"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="No"/>
                                         <connections>
                                             <action selector="dontPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VmM-Q8-T6u"/>
                                         </connections>
