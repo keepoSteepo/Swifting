@@ -48,19 +48,43 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0NO-CA-kB8">
+                                <rect key="frame" x="137.5" y="210.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="anK-le-iCw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q77-xh-hMp">
+                                <rect key="frame" x="137.5" y="260.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6rD-aP-R8A"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="0NO-CA-kB8" firstAttribute="top" secondItem="qoK-Mf-ipG" secondAttribute="bottom" constant="20" id="9VF-7L-6Vc"/>
+                            <constraint firstItem="q77-xh-hMp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="THs-Go-iSe"/>
                             <constraint firstItem="ogv-bT-eyW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TRO-kO-XVi"/>
                             <constraint firstItem="WqF-Aj-fsO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TiJ-e3-dQq"/>
+                            <constraint firstItem="q77-xh-hMp" firstAttribute="top" secondItem="0NO-CA-kB8" secondAttribute="bottom" constant="20" id="Ui0-tn-tgA"/>
                             <constraint firstItem="qoK-Mf-ipG" firstAttribute="top" secondItem="deP-Ms-XEc" secondAttribute="bottom" constant="20" id="Vvg-Cr-NEh"/>
                             <constraint firstItem="deP-Ms-XEc" firstAttribute="top" secondItem="ix6-ph-ioR" secondAttribute="bottom" constant="20" id="W0g-eU-9Lm"/>
+                            <constraint firstItem="0NO-CA-kB8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ct2-pM-GqQ"/>
                             <constraint firstItem="ogv-bT-eyW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="pTI-jK-SWG"/>
                             <constraint firstItem="deP-Ms-XEc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sKc-rP-gEs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="0NO-CA-kB8" id="a3S-TH-oxB"/>
+                        <outlet property="text2" destination="q77-xh-hMp" id="r2p-Rq-ugT"/>
                         <outlet property="theLabel" destination="ix6-ph-ioR" id="ncT-hW-Eqa"/>
                     </connections>
                 </viewController>
